@@ -4,7 +4,7 @@ import java.util.Date;
 public class Logger {
     Date date = new Date();
     private static Logger logger;
-    File file = new File("D://log.txt");
+    File file = new File("log.txt");
 
     public static Logger getInstance() {
         if (logger == null) {

@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Client {
     static String clientName;
-    static File settings = new File("D://settings.txt");
+    static File settings = new File("settings.txt");
 
     public Client ()  {
         final String SERVER_HOST = "localhost";

@@ -2,10 +2,11 @@ import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.*;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 public class Server {
-    static File settings = new File("D://settings.txt");
-    private List<ClientHandler> clientsList = new ArrayList<>();
+    static File settings = new File("settings.txt");
+    private CopyOnWriteArrayList<ClientHandler> clientsList = new CopyOnWriteArrayList<>();
 
     public int getPortFromSettings(File file) {
         Scanner scanner = null;
